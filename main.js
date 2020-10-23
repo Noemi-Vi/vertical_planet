@@ -14,7 +14,6 @@ var load_counter = 0;
 // Initialize images for layers
 var background = new Image();
 var shadows = new Image();
-var shadows2 = new Image();
 var clouds = new Image();
 var floaties_1 = new Image();
 var floaties_2 = new Image();
@@ -52,9 +51,10 @@ var layer_list = [
     src: "./images/layer_3_1.png",
     z_index: -1.25,
     position: { x: 0, y: 0 },
-    blend: null,
+    blend: "overlay",
     opacity: 1,
   },
+
   {
     image: floaties_2,
     src: "./images/layer_4_1.png",
@@ -75,7 +75,7 @@ var layer_list = [
   {
     image: mask,
     src: "./images/layer_6_1.png",
-    z_index: 0,
+    z_index: -0.4,
     position: { x: 0, y: 0 },
     blend: null,
     opacity: 1,
@@ -83,7 +83,7 @@ var layer_list = [
 
   {
     image: planet,
-    src: "./images/layer_7_2.png",
+    src: "./images/layer_7_1.png",
     z_index: 0.8,
     position: { x: 0, y: 0 },
     blend: null,
