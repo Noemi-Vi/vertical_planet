@@ -75,7 +75,7 @@ var layer_list = [
   {
     image: mask,
     src: "./images/layer_6_1.png",
-    z_index: -0.4,
+    z_index: -0.6,
     position: { x: 0, y: 0 },
     blend: null,
     opacity: 1,
